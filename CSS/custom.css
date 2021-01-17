@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FFDFBA;
+}
+
+.test-border {
+    border: 1px solid black;
+}
+
+.card-login {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+}
+
+.from-login {
+    padding: 25px;
+    border-radius: 17px;
+}
+
+.btn-login {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 17px;
+}
+
+a {
+    color: #6DBFFE;
+}
+
+a:hover {
+    color: #47aefd;
+    text-decoration: none;
+}
+
+.no-border {
+    border: none;
+}
+
+.box-hide {
+    display: block;
+}
+
+@media (max-width: 575.98px) {
+    .box-hide {
+        display: none;
+    }
+    .img-size-sm {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .box-hide {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) and (max-width: 1374px) {
+    .box-hide {
+        display: none;
+    }
+}

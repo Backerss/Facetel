@@ -1,0 +1,67 @@
+.bg-primary {
+    background-color: #BAE1FF !important;
+}
+
+.bg-secondary {
+    background-color: #a1a1a1 !important;
+}
+
+.bg-success {
+    background-color: #BAFFC9 !important;
+}
+
+.bg-danger {
+    background-color: #ffb3ba !important;
+}
+
+.bg-warning {
+    background-color: #ffdfba !important;
+}
+
+
+/*ปุ่ม*/
+
+.btn-primary {
+    background-color: #BAE1FF !important;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #BAFFC9 !important;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/*text*/
+
+.text-primary {
+    color: #BAE1FF !important;
+}
+
+.text-secondary {
+    color: #a1a1a1 !important;
+}
+
+.text-success {
+    color: #BAFFC9 !important;
+}
+
+.text-danger {
+    color: #ffb3ba !important;
+}
+
+.text-warning {
+    color: #ffdfba !important;
+}
+
+.text-whithe {
+    color: white;
+}
+
+.text-dark {
+    color: #1F1F1F;
+}
