@@ -65,3 +65,9 @@
 .text-dark {
     color: #1F1F1F;
 }
+
+.alert-primary {
+    color: white;
+    background-color: #BAE1FF !important;
+    border-color: #BAE1FF !important;
+}

@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="../../CSS/custom.css">
     <link rel="stylesheet" href="../../CSS/newcolor.css">
 
+    <link rel="icon" href="../../IMG/icon/Facetel_logo.ico" type="image/x-icon"/>
+
     <title>Username</title>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.25));">
-        <a class="navbar-brand font-weight-bold text-white" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary position-relative" style="filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.25)); z-index: 1;">
+        <a class="navbar-brand font-weight-bold text-white" href="../home.html">
             <img src="../../IMG/icon/Facetel_logo.jpg" style="border-radius: 17px;" width="30" height="30" class="d-inline-block align-top" alt=""> Facetel
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +29,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item pr-lg-5">
-                    <a class="nav-link active text-white" href="#"><img src="../../IMG/icon/home.png" width="30" height="30" class="d-inline-block align-top" alt=""> </a>
+                    <a class="nav-link active text-white" href="../home.html"><img src="../../IMG/icon/home.png" width="30" height="30" class="d-inline-block align-top" alt=""> </a>
                 </li>
                 <li class="nav-item pr-lg-5">
                     <a class="nav-link active text-white" href="#"><img src="../../IMG/icon/video.png" width="30" height="30" class="d-inline-block align-top" alt=""></a>
                 </li>
             </ul>
-            <a href="#" class="text-white"><img src="../../IMG/icon/profile.png" width="30" height="30" alt="" srcset=""> Username</a>
+            <div class="dropdown show">
+                <a href="#" class="text-white dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><img src="../../IMG/icon/profile.png" width="30" height="30"
+                        alt="" srcset=""> Username</a>
+
+                <div class="dropdown-menu dropdown-menu-lg-right dropdown-menu-left" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="profile/profile.html">ดูโปรไฟล์</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="#">ออกจากระบบ</a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -101,6 +113,40 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="card mt-5" style="border: none; border-radius: 15px;">
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-1 col-1">
+                                                <img src="../../IMG/icon/profile.png" class="img-size-sm" width="40" height="40" alt="" srcset="">
+                                            </div>
+                                            <div class="col-lg-11 col-10 my-2 ml-lg-0 ml-1">
+                                                <a href="#" class="text-dark">Username</a><a href="#" class="ml-lg-3 ml-2 text-dark">XX/XX/XXXX</a>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="#">ตอบกลับ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>

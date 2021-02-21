@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/custom.css">
     <link rel="stylesheet" href="CSS/newcolor.css">
 
@@ -28,13 +29,17 @@
                 <div class="card bg-warning card-login">
                     <div class="card-body">
                         <form>
-                            <input type="email" class="form-control from-login no-border" id="email" placeholder="อีเมลหรือหมายเลจโทรศัพท์มือถือ">
-                            <input type="email" class="form-control from-login mt-2 no-border" id="pass" placeholder="รหัสผ่าน">
+                            <input type="email" class="form-control from-login no-border" id="email"
+                                placeholder="อีเมลหรือหมายเลจโทรศัพท์มือถือ">
+                            <input type="email" class="form-control from-login mt-2 no-border" id="pass"
+                                placeholder="รหัสผ่าน">
                             <button type="submit" class="btn btn-block bg-primary mt-2 btn-login">เข้าสู่ระบบ</button>
                         </form>
-                        <p class="text-center mt-1" style="color: #6DBFFE; font-size: 20px;"><a href="# ">ลืมรหัสผ่านใช่หรือไม่</a></p>
+                        <p class="text-center mt-1" style="color: #6DBFFE; font-size: 20px;"><a
+                                href="# ">ลืมรหัสผ่านใช่หรือไม่</a></p>
                         <hr style="color: #424242; ">
-                        <a href="# " type="submit " class="btn btn-block bg-success mt-2 btn-login">สร้างบัญชีใหม่</a>
+                        <a href="# " type="submit " class="btn btn-block bg-success mt-2 btn-login" data-toggle="modal"
+                            data-target="#RegisterModal">สร้างบัญชีใหม่</a>
 
                     </div>
                 </div>
@@ -44,8 +49,147 @@
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+<div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLongTitle">สมัคร</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" name="Firstname" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" name="Lastname" placeholder="Last name">
+                        </div>
+                    </div>
+
+                    <div class="row mt-lg-3 mt-2">
+                        <div class="col">
+                            <input type="text" class="form-control" name="Username" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="row mt-lg-3 mt-2">
+                        <div class="col">
+                            <input type="password" class="form-control" name="Pass" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="row mt-lg-3 mt-2">
+                        <div class="col">
+                            <select class="form-control" name="Date" id="exampleFormControlSelect1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">1</option>
+                                <option value="7">2</option>
+                                <option value="8">3</option>
+                                <option value="9">4</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">28</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-control" name="Month" id="exampleFormControlSelect1">
+                                <option value="1">มกราคม</option>
+                                <option value="2">กุมภาพันธ์</option>
+                                <option value="3">มีนาคม</option>
+                                <option value="4">เมษายน</option>
+                                <option value="5">พฤษภาคม</option>
+                                <option value="6">มิถุนายน</option>
+                                <option value="7">กรกฎาคม</option>
+                                <option value="8">สิงหาคม</option>
+                                <option value="9">กันยายน</option>
+                                <option value="10">ตุลาคม</option>
+                                <option value="11">ฤษจิกายน</option>
+                                <option value="12">ธันวาคม</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="Year" class="form-control" placeholder="ปีเกิด: ค.ส.">
+                        </div>
+                    </div>
+
+                    <div class="row mt-lg-3 mt-2">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                  ชาย
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                  หญิง
+                                </label>
+                              </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                  ไม่ระบุ
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+
+                    <p class="mt-2">เมื่อคลิก สมัคร แสดงว่าคุณยินยอมตาม <a href="#" class="text-primary"> ข้อกำหนด นโยบายข้อมูล 
+                        และนโยบายคุกกี้ของเราแล้ว</a> คุณอาจได้รับการแจ้งเตือนทาง SMS 
+                        จากเราและสามารถเลือกไม่รับได้ทุกเมื่อ</p>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                <button type="button" class="btn btn-primary">สมัคร</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+    crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+    crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
+    crossorigin="anonymous "></script>
 
 </html>

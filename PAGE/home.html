@@ -7,9 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/custom.css">
     <link rel="stylesheet" href="../CSS/newcolor.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+
+    <link rel="icon" href="../IMG/icon/Facetel_logo.ico" type="image/x-icon"/>
 
     <title>Facetel</title>
 
@@ -17,138 +27,283 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.25));">
-        <a class="navbar-brand font-weight-bold text-white" href="#">
-            <img src="../IMG/icon/Facetel_logo.jpg" style="border-radius: 17px;" width="30" height="30" class="d-inline-block align-top" alt=""> Facetel
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary position-relative"
+            style="filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.25)); z-index: 1;">
+            <a class="navbar-brand font-weight-bold text-white" href="home.html">
+                <img src="../IMG/icon/Facetel_logo.jpg" style="border-radius: 17px;" width="30" height="30"
+                    class="d-inline-block align-top" alt=""> Facetel
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item pr-lg-5">
-                    <a class="nav-link active text-white" href="#"><img src="../IMG/icon/home.png" width="30" height="30" class="d-inline-block align-top" alt=""> </a>
-                </li>
-                <li class="nav-item pr-lg-5">
-                    <a class="nav-link active text-white" href="#"><img src="../IMG/icon/video.png" width="30" height="30" class="d-inline-block align-top" alt=""></a>
-                </li>
-            </ul>
-            <a href="#" class="text-white"><img src="../IMG/icon/profile.png" width="30" height="30" alt="" srcset=""> Username</a>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item pr-lg-5">
+                        <a class="nav-link active text-white" href="home.html"><img src="../IMG/icon/home.png"
+                                width="30" height="30" class="d-inline-block align-top" alt=""> </a>
+                    </li>
+                    <li class="nav-item pr-lg-5">
+                        <a class="nav-link active text-white" href="video.html"><img src="../IMG/icon/video.png"
+                                width="30" height="30" class="d-inline-block align-top" alt=""></a>
+                    </li>
+                </ul>
+                <div class="dropdown show">
+                    <a href="#" class="text-white dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><img src="../IMG/icon/profile.png" width="30"
+                            height="30" alt="" srcset=""> Username</a>
 
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-lg-2 box-hide">
-                <div class="row">
-                    <div class="container-fluid ml-lg-3 pl-lg-2">
-                        <a href="#" class="text-dark"><img src="../IMG/icon/profile.png" width="40" height="40" alt="" srcset=""> Frsitname Lastname</a>
-                    </div>
-                </div>
-                <div class="row mt-lg-3">
-                    <div class="container-fluid ml-lg-3 pl-lg-2">
-                        <a href="#" class="text-dark"><img src="../IMG/icon/covid-protection.png" width="40" height="40" alt="" srcset=""> โควิด-19: ศูนย์ข้อมูล</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-menu-left"
+                        aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="profile/profile.html">ดูโปรไฟล์</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" href="#">ออกจากระบบ</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mx-auto">
-                <div class="card mr-lg-3" style="border: none; border-radius: 15px;">
-                    <div class="card-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="row">
-                                        <div class="col-lg-1 col-1">
-                                            <img src="../IMG/icon/profile.png" width="40" height="40" alt="" srcset="">
-                                        </div>
-                                        <div class="col-lg-11 col-10 ml-lg-0 ml-3">
-                                            <input type="text" class="form-control" readonly style="border-radius: 17px; border: none;" placeholder="คุณกำลังคิดอะไรอยู่...." data-toggle="modal" data-target="#Post">
+        </nav>
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-lg-2 box-hide">
+                    <div class="row">
+                        <div class="container-fluid ml-lg-3 pl-lg-2">
+                            <a href="#" class="text-dark"><img src="../IMG/icon/profile.png" width="40" height="40"
+                                    alt="" srcset=""> Frsitname Lastname</a>
+                        </div>
+                    </div>
+                    <div class="row mt-lg-3">
+                        <div class="container-fluid ml-lg-3 pl-lg-2">
+                            <a href="#" class="text-dark"><img src="../IMG/icon/covid-protection.png" width="40"
+                                    height="40" alt="" srcset=""> โควิด-19: ศูนย์ข้อมูล</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 mx-auto">
+
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="../IMG/icon/mask.png" width="75px" height="75px" alt="" srcset="">
+                            </div>
+                        </div>
+
+                        <div class="row mt-1">
+                            <strong class="mr-1 text-lg-left text-center">Covid-19!!</strong> อยู่บ้านเพื่อชาติ
+                            ทราบข้อมูลเกี่ยวกับไวรัส โคโรน่า 2019 <a href="https://covid19.moph.go.th/">คลิก!</a>
+                        </div>
+
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--Post-->
+                    <div class="card mr-lg-3" style="border: none; border-radius: 15px;">
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-1 col-1">
+                                                <img src="../IMG/icon/profile.png" width="40" height="40" alt=""
+                                                    srcset="">
+                                            </div>
+                                            <div class="col-lg-11 col-10 ml-lg-0 ml-3">
+                                                <input type="text" class="form-control" readonly
+                                                    style="border-radius: 17px; border: none;"
+                                                    placeholder="คุณกำลังคิดอะไรอยู่...." data-toggle="modal"
+                                                    data-target="#Post">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <!--Post-->
 
-                <div class="card mt-5 mr-lg-3" style="border: none; border-radius: 15px;">
-                    <div class="card-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="row">
-                                        <div class="col-lg-1 col-1">
-                                            <img src="../IMG/icon/profile.png" width="40" height="40" alt="" srcset="">
+                    <!--Post List-->
+                    <div class="card mt-5 mr-lg-3" style="border: none; border-radius: 15px;">
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-1 col-1">
+                                                <img src="../IMG/icon/profile.png" width="40" height="40" alt=""
+                                                    srcset="">
+                                            </div>
+                                            <div class="col-lg-11 col-10 my-2 ml-lg-0 ml-3">
+                                                <a href="#" class="text-dark">Username</a><a href="#"
+                                                    class="ml-lg-3 ml-2 text-dark">XX/XX/XXXX</a>
+                                            </div>
                                         </div>
-                                        <div class="col-lg-11 col-10 my-2 ml-lg-0 ml-3">
-                                            <a href="#" class="text-dark">Username</a><a href="#" class="ml-lg-3 ml-2 text-dark">XX/XX/XXXX</a>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h1>ยินดีตอนรับสู่ Facetel</h1>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h1>ยินดีตอนรับสู่ Facetel</h1>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a href="#">ตอบกลับ</a>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="post/post.html">ตอบกลับ</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--Post List-->
+
+
+                    <!--Post List Video-->
+                    <div class="card mt-5 mr-lg-3" style="border: none; border-radius: 15px;">
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-1 col-1">
+                                                <img src="../IMG/icon/profile.png" width="40" height="40" alt=""
+                                                    srcset="">
+                                            </div>
+                                            <div class="col-lg-11 col-10 my-2 ml-lg-0 ml-3">
+                                                <a href="#" class="text-dark">Username</a><a href="#"
+                                                    class="ml-lg-3 ml-2 text-dark">XX/XX/XXXX</a>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe class="embed-responsive-item"
+                                                        src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                                        allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="post/post.html">ตอบกลับ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Post List Video-->
+
                 </div>
-            </div>
-            <div class="col-lg-2 ml-3 box-hide">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h6 class="">ได้รับการสนับสนุน</h6>
+
+
+                <div class="col-lg-2 ml-3 box-hide">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h6 class="">ได้รับการสนับสนุน</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img class="ml-lg-3" src="../IMG/Bos.png" width="150" height="150" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="row mt-lg-3">
+                        <div class="col-lg-12">
+                            <img class="ml-lg-3" src="../IMG/Bos.png" width="150" height="150" alt="" srcset="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" style="overflow: auto; height: 350px;">
+                        <div class="col-lg-12">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                            <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#"
+                                class="ml-2 text-dark">Frsitname Lastname</a>
+                        </div>
+
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <img class="ml-lg-3" src="../IMG/Bos.png" width="150" height="150" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="row mt-lg-3">
-                    <div class="col-lg-12">
-                        <img class="ml-lg-3" src="../IMG/Bos.png" width="150" height="150" alt="" srcset="">
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#" class="ml-2 text-dark">Frsitname Lastname</a>
-                    </div>
-                    <div class="col-lg-12 mt-3">
-                        <img src="../IMG/icon/profile.png" width="35" height="35" alt="" srcset=""><a href="#" class="ml-2 text-dark">Frsitname Lastname</a>
-                    </div>
-                </div>
+
             </div>
         </div>
-    </div>
 
 
 
 </body>
-
-
-<div class="modal fade" id="Post" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="Post" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">โพสต์</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
                 <form>
-                    <textarea class="form-control" id="" rows="3"></textarea>
+                    <textarea id="summernote" class="form-control" rows="3"></textarea>
                 </form>
             </div>
             <div class="modal-footer">
@@ -158,8 +313,32 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+<script>
+    $('#summernote').summernote({
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+    crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+    crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
+    crossorigin="anonymous "></script>
 
 </html>
